@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>测试缘分是否已尽</title>
+    
+</head>
+<script>
+    // 通过 localStorage 获取问题信息
+   // const storedQuestions = JSON.parse(localStorage.getItem("questions")) || [];
+
+    // 在页面加载后填充问题文本
+   // document.addEventListener("DOMContentLoaded", () => {
+   //     const questionLegends = document.querySelectorAll(".question-text");
+
+    //    storedQuestions.forEach((question, index) => {
+    //        if (questionLegends[index]) {
+    //            questionLegends[index].textContent = question.text;
+   //         }
+    //    });
+    //});
+</script>
+
+<body>
+
+    <div class="title-container">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <span class="brand-text">这是一个商标</span>
+        </div>
+        <a href="#" class="title">个人测试</a>
+        <span class="title-separator">|</span> <!-- 添加标题之间的分隔符 -->
+        <a href="#" class="title">剧本详情</a>
+        <span class="title-separator">|</span> <!-- 添加标题之间的分隔符 -->
+        <a href="#" class="title">专属客服</a>
+        <span class="title-separator">|</span> <!-- 添加标题之间的分隔符 -->
+        <a href="#" class="title">联系我们</a>
+    </div>
+
+    <form action="http://localhost:3000/submit" method="post">
+
+        <div id="questionnaire">
+            <div id="begin">
+                <h1 class="begin-title">测试缘分是否已尽</h1>
+                <p class="hint">很多人对于爱情的解释也就是缘分</p>
+                <p class="hint">有的人爱情不圆满，那么就是没有缘分或者是缘分已尽</p>
+                <p class="hint">缘分是很玄妙的解释，但也会牵引着两人彼此靠近</p>
+                <p class="hint">若你还在纠结自己的感情，不妨测试缘分是否已尽</p>
+            </div>
+            <div style="margin-bottom: 5%;"></div>
+            <fieldset>
+                <legend class="question-text" data-question-id="q1">你最不想和谁有纠缠?</legend>
+                <div style="margin-bottom: 5%;"></div>
+                <div class="options-container">
+                    <div class="group__options">
+
+                        <div class="captions--desktop caption disagree">陌生人</div>
+
+                        <input type="radio" id="option1" name="q1" value="1">
+                        <label class="option option1" for="option1"></label>
+
+
+                        <input type="radio" id="option2" name="q1" value="2">
+                        <label class="option option2" for="option2"></label>
+
+                        <input type="radio" id="option3" name="q1" value="3">
+                        <label class="option option3" for="option3"></label>
+
+                        <input type="radio" id="option4" name="q1" value="4">
+                        <label class="option option4" for="option4"></label>
+
+                        <input type="radio" id="option5" name="q1" value="5">
+                        <label class="option option5" for="option5"></label>
+
+                        <input type="radio" id="option6" name="q1" value="6">
+                        <label class="option option6" for="option6"></label>
+
+                        <input type="radio" id="option7" name="q1" value="7">
+                        <label class="option option7" for="option7"></label>
+
+                        <div class="captions--desktop caption agree">前任</div>
+                    </div>
+                </div>
+            </fieldset>
+            <div style="margin-bottom: 10%;"></div>
+            <div class="dashed-line"></div>
+            <div style="margin-bottom: 7%;"></div>
+            <fieldset>
+
+                <legend class="question-text" data-question-id="q2">你自己的努力一定会有所回报。</legend>
+                <div style="margin-bottom: 5%;"></div>
+                <div class="options-container">
+
+
+                    <div class="captions--desktop caption disagree">反对</div>
+                    <div class="group__options">
+                        <input type="radio" id="q2_option1" name="q2" value="1">
+                        <label class="option option1" for="q2_option1"></label>
+
+                        <input type="radio" id="q2_option2" name="q2" value="2">
+                        <label class="option option2" for="q2_option2"></label>
+
+                        <input type="radio" id="q2_option3" name="q2" value="3">
+                        <label class="option option3" for="q2_option3"></label>
+
+                        <input type="radio" id="q2_option4" name="q2" value="4">
+                        <label class="option option4" for="q2_option4"></label>
+
+                        <input type="radio" id="q2_option5" name="q2" value="5">
+                        <label class="option option5" for="q2_option5"></label>
+
+                        <input type="radio" id="q2_option6" name="q2" value="6">
+                        <label class="option option6" for="q2_option6"></label>
+
+                        <input type="radio" id="q2_option7" name="q2" value="7">
+                        <label class="option option7" for="q2_option7"></label>
+
+                        <div class="captions--desktop caption agree">同意</div>
+
+                    </div>
+                </div>
+
+
+            </fieldset>
+            <div style="margin-bottom: 10%;"></div>
+            <div style="margin-bottom: 10%;"></div>
+            <div class="dashed-line"></div>
+            <div style="margin-bottom: 7%;"></div>
+            <fieldset>
+                <legend class="question-text" data-question-id="q3">你经常看不惯同事的行为。</legend>
+                <div style="margin-bottom: 5%;"></div>
+                <div class="options-container">
+                    <div class="group__options">
+                        <div class="captions--desktop caption disagree">反对</div>
+
+                        <input type="radio" id="q3_option1" name="q3" value="1">
+                        <label class="option option1" for="q3_option1"></label>
+
+                        <input type="radio" id="q3_option2" name="q3" value="2">
+                        <label class="option option2" for="q3_option2"></label>
+
+                        <input type="radio" id="q3_option3" name="q3" value="3">
+                        <label class="option option3" for="q3_option3"></label>
+
+                        <input type="radio" id="q3_option4" name="q3" value="4">
+                        <label class="option option4" for="q3_option4"></label>
+
+                        <input type="radio" id="q3_option5" name="q3" value="5">
+                        <label class="option option5" for="q3_option5"></label>
+
+                        <input type="radio" id="q3_option6" name="q3" value="6">
+                        <label class="option option6" for="q3_option6"></label>
+
+                        <input type="radio" id="q3_option7" name="q3" value="7">
+                        <label class="option option7" for="q3_option7"></label>
+
+                        <div class="captions--desktop caption agree">同意</div>
+                    </div>
+                </div>
+            </fieldset>
+            <div style="margin-bottom: 10%;"></div>
+            <div style="margin-bottom: 10%;"></div>
+            <div class="dashed-line"></div>
+            <div style="margin-bottom: 7%;"></div>
+            <fieldset>
+                <legend class="question-text" data-question-id="q4">在交友时，你并不关心对方的风评。</legend>
+                <div style="margin-bottom: 5%;"></div>
+                <div class="options-container">
+                    <div class="group__options">
+                        <div class="captions--desktop caption disagree">反对</div>
+
+                        <input type="radio" id="q4_option1" name="q4" value="1">
+                        <label class="option option1" for="q4_option1"></label>
+
+                        <input type="radio" id="q4_option2" name="q4" value="2">
+                        <label class="option option2" for="q4_option2"></label>
+
+                        <input type="radio" id="q4_option3" name="q4" value="3">
+                        <label class="option option3" for="q4_option3"></label>
+
+                        <input type="radio" id="q4_option4" name="q4" value="4">
+                        <label class="option option4" for="q4_option4"></label>
+
+                        <input type="radio" id="q4_option5" name="q4" value="5">
+                        <label class="option option5" for="q4_option5"></label>
+
+                        <input type="radio" id="q4_option6" name="q4" value="6">
+                        <label class="option option6" for="q4_option6"></label>
+
+                        <input type="radio" id="q4_option7" name="q4" value="7">
+                        <label class="option option7" for="q4_option7"></label>
+
+                        <div class="captions--desktop caption agree">同意</div>
+                    </div>
+                </div>
+            </fieldset>
+            <div style="margin-bottom: 10%;"></div>
+            <div style="margin-bottom: 10%;"></div>
+            <div class="dashed-line"></div>
+            <div style="margin-bottom: 7%;"></div>
+            <fieldset>
+                <legend class="question-text" data-question-id="q5">你在意的人经常伤害你。</legend>
+                <div style="margin-bottom: 5%;"></div>
+                <div class="options-container">
+                    <div class="group__options">
+                        <div class="captions--desktop caption disagree">反对</div>
+
+                        <input type="radio" id="q5_option1" name="q5" value="1">
+                        <label class="option option1" for="q5_option1"></label>
+
+                        <input type="radio" id="q5_option2" name="q5" value="2">
+                        <label class="option option2" for="q5_option2"></label>
+
+                        <input type="radio" id="q5_option3" name="q5" value="3">
+                        <label class="option option3" for="q5_option3"></label>
+
+                        <input type="radio" id="q5_option4" name="q5" value="4">
+                        <label class="option option4" for="q5_option4"></label>
+
+                        <input type="radio" id="q5_option5" name="q5" value="5">
+                        <label class="option option5" for="q5_option5"></label>
+
+                        <input type="radio" id="q5_option6" name="q5" value="6">
+                        <label class="option option6" for="q5_option6"></label>
+
+                        <input type="radio" id="q5_option7" name="q5" value="7">
+                        <label class="option option7" for="q5_option7"></label>
+
+                        <div class="captions--desktop caption agree">同意</div>
+                    </div>
+                </div>
+            </fieldset>
+            <div style="margin-bottom: 10%;"></div>
+            <div style="margin-bottom: 10%;"></div>
+            <div class="dashed-line"></div>
+            <div style="margin-bottom: 7%;"></div>
+            <fieldset>
+                <legend class="question-text" data-question-id="q6">你经常做出一些不理智的事。</legend>
+                <div style="margin-bottom: 5%;"></div>
+                <div class="options-container">
+                    <div class="group__options">
+                        <div class="captions--desktop caption disagree">反对</div>
+
+                        <input type="radio" id="q6_option1" name="q6" value="1">
+                        <label class="option option1" for="q6_option1"></label>
+
+                        <input type="radio" id="q6_option2" name="q6" value="2">
+                        <label class="option option2" for="q6_option2"></label>
+
+                        <input type="radio" id="q6_option3" name="q6" value="3">
+                        <label class="option option3" for="q6_option3"></label>
+
+                        <input type="radio" id="q6_option4" name="q6" value="4">
+                        <label class="option option4" for="q6_option4"></label>
+
+                        <input type="radio" id="q6_option5" name="q6" value="5">
+                        <label class="option option5" for="q6_option5"></label>
+
+                        <input type="radio" id="q6_option6" name="q6" value="6">
+                        <label class="option option6" for="q6_option6"></label>
+
+                        <input type="radio" id="q6_option7" name="q6" value="7">
+                        <label class="option option7" for="q6_option7"></label>
+
+                        <div class="captions--desktop caption agree">同意</div>
+                    </div>
+                </div>
+            </fieldset>
+            <div style="margin-bottom: 10%;"></div>
+            <div style="margin-bottom: 10%;"></div>
+            <div class="dashed-line"></div>
+            <div style="margin-bottom: 7%;"></div>
+            <fieldset>
+                <legend class="question-text" data-question-id="q7">你的朋友是真心对待你的。</legend>
+                <div style="margin-bottom: 5%;"></div>
+                <div class="options-container">
+                    <div class="group__options">
+                        <div class="captions--desktop caption disagree">反对</div>
+
+                        <input type="radio" id="q7_option1" name="q7" value="1">
+                        <label class="option option1" for="q7_option1"></label>
+
+                        <input type="radio" id="q7_option2" name="q7" value="2">
+                        <label class="option option2" for="q7_option2"></label>
+
+                        <input type="radio" id="q7_option3" name="q7" value="3">
+                        <label class="option option3" for="q7_option3"></label>
+
+                        <input type="radio" id="q7_option4" name="q7" value="4">
+                        <label class="option option4" for="q7_option4"></label>
+
+                        <input type="radio" id="q7_option5" name="q7" value="5">
+                        <label class="option option5" for="q7_option5"></label>
+
+                        <input type="radio" id="q7_option6" name="q7" value="6">
+                        <label class="option option6" for="q7_option6"></label>
+
+                        <input type="radio" id="q7_option7" name="q7" value="7">
+                        <label class="option option7" for="q7_option7"></label>
+
+                        <div class="captions--desktop caption agree">同意</div>
+                    </div>
+                </div>
+            </fieldset>
+            <div style="margin-bottom: 10%;"></div>
+            <div style="margin-bottom: 10%;"></div>
+            <div class="dashed-line"></div>
+            <div style="margin-bottom: 7%;"></div>
+            <fieldset>
+                <legend class="question-text" data-question-id="q8">你不喜欢的人追求你，你会直接拒绝。</legend>
+                <div style="margin-bottom: 5%;"></div>
+                <div class="options-container">
+                    <div class="group__options">
+                        <div class="captions--desktop caption disagree">反对</div>
+
+                        <input type="radio" id="q8_option1" name="q8" value="1">
+                        <label class="option option1" for="q8_option1"></label>
+
+                        <input type="radio" id="q8_option2" name="q8" value="2">
+                        <label class="option option2" for="q8_option2"></label>
+
+                        <input type="radio" id="q8_option3" name="q8" value="3">
+                        <label class="option option3" for="q8_option3"></label>
+
+                        <input type="radio" id="q8_option4" name="q8" value="4">
+                        <label class="option option4" for="q8_option4"></label>
+
+                        <input type="radio" id="q8_option5" name="q8" value="5">
+                        <label class="option option5" for="q8_option5"></label>
+
+                        <input type="radio" id="q8_option6" name="q8" value="6">
+                        <label class="option option6" for="q8_option6"></label>
+
+                        <input type="radio" id="q8_option7" name="q8" value="7">
+                        <label class="option option7" for="q8_option7"></label>
+
+                        <div class="captions--desktop caption agree">同意</div>
+                    </div>
+                </div>
+            </fieldset>
+            <div style="margin-bottom: 10%;"></div>
+            <div style="margin-bottom: 10%;"></div>
+            <div class="dashed-line"></div>
+            <div style="margin-bottom: 7%;"></div>
+            <fieldset>
+                <legend class="question-text" data-question-id="q9">你经常在回家之后想要关掉手机，不再接收消息。</legend>
+                <div style="margin-bottom: 5%;"></div>
+                <div class="options-container">
+                    <div class="group__options">
+                        <div class="captions--desktop caption disagree">反对</div>
+            
+                        <input type="radio" id="q9_option1" name="q9" value="1">
+                        <label class="option option1" for="q9_option1"></label>
+            
+                        <input type="radio" id="q9_option2" name="q9" value="2">
+                        <label class="option option2" for="q9_option2"></label>
+            
+                        <input type="radio" id="q9_option3" name="q9" value="3">
+                        <label class="option option3" for="q9_option3"></label>
+            
+                        <input type="radio" id="q9_option4" name="q9" value="4">
+                        <label class="option option4" for="q9_option4"></label>
+            
+                        <input type="radio" id="q9_option5" name="q9" value="5">
+                        <label class="option option5" for="q9_option5"></label>
+            
+                        <input type="radio" id="q9_option6" name="q9" value="6">
+                        <label class="option option6" for="q9_option6"></label>
+            
+                        <input type="radio" id="q9_option7" name="q9" value="7">
+                        <label class="option option7" for="q9_option7"></label>
+            
+                        <div class="captions--desktop caption agree">同意</div>
+                    </div>
+                </div>
+            </fieldset>
+            <div style="margin-bottom: 10%;"></div>
+            <div style="margin-bottom: 10%;"></div>
+            <div class="dashed-line"></div>
+            <div style="margin-bottom: 7%;"></div>
+            <fieldset>
+                <legend class="question-text" data-question-id="q10">你丢失了贵重物品的第一反应是？</legend>
+                <div style="margin-bottom: 5%;"></div>
+                <div class="options-container">
+                    <div class="group__options">
+                        <div class="captions--desktop caption disagree">难过地哭</div>
+
+                        <input type="radio" id="q10_option1" name="q10" value="1">
+                        <label class="option option1" for="q10_option1"></label>
+
+                        <input type="radio" id="q10_option2" name="q10" value="2">
+                        <label class="option option2" for="q10_option2"></label>
+
+                        <input type="radio" id="q10_option3" name="q10" value="3">
+                        <label class="option option3" for="q10_option3"></label>
+
+                        <input type="radio" id="q10_option4" name="q10" value="4">
+                        <label class="option option4" for="q10_option4"></label>
+
+                        <input type="radio" id="q10_option5" name="q10" value="5">
+                        <label class="option option5" for="q10_option5"></label>
+
+                        <input type="radio" id="q10_option6" name="q10" value="6">
+                        <label class="option option6" for="q10_option6"></label>
+
+                        <input type="radio" id="q10_option7" name="q10" value="7">
+                        <label class="option option7" for="q10_option7"></label>
+
+                        <div class="captions--desktop caption agree">报警</div>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <div style="margin-bottom: 10%;"></div>
+            <div style="margin-bottom: 10%;"></div>
+            <button style="margin-left: 10%;width: 80%;"type="submit">提交</button>
+            <div class="dashed-line"></div>
+            <div style="margin-bottom: 7%;"></div>
+
+
+            <!-- Add more fieldsets for additional questions -->
+
+
+    </form>
+
+
+</body>
+
+</html>
